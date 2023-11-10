@@ -1,0 +1,165 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* home */
+.container {
+    display: flex;
+}
+
+.text-section {
+    flex: 1;
+    
+}
+
+.image-section {
+    flex: 1;
+}
+
+/* Optional: You can add additional styles for better visual presentation */
+.text-section img{width: 100%; /* Make the image fill the container */
+    height: 70%; /* Maintain aspect ratio */
+}
+
+.image-section img {
+    width: 100%; /* Make the image fill the container */
+    height: 70%; /* Maintain aspect ratio */
+    z-index:0;
+}
+.text-section h1{
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.text-section ul{
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    font-size: 2.8vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.rockText{
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+/* about */
+.containerAbout {
+    display: flex; /* Use flexbox to create a flex container */
+    align-items: center; /* Align items vertically in the center */
+    margin-left: 0px;
+}
+
+.imageAbout {
+    width: 400px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 300px; /* Add margin between the image and paragraph */
+    margin-left: -400px;
+    margin-top: -30px;
+    
+}
+
+/* Optional: Add additional styles for the paragraph */
+.textAbout {
+    font-size: 40px;
+    line-height: 1.5;
+    margin-left: -140px;
+}
+.image-top{
+    width: 400px;
+    height: auto;margin-bottom: 800px;
+    margin-left: 80px;
+  }
+.about{
+    position: absolute;
+    margin-bottom: 820px;
+    margin-right: -90px;
+    margin-left: 150px;
+    font-size: 50px;
+}
+
+.column {
+    
+    float: left;
+    width: 30%;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 90px;
+    border-radius: 1%;
+    min-width: 330px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 600px;
+  }
+  
+  .row {
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: -750px;
+    margin-bottom: 900px;
+     margin-left: 80px;  margin-right: 50px; 
+  }
+  .articleImg{
+    width: 300px; height: 424px;
+ }
+
+ /* contact */
+ input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .containerC {
+    border-radius: 5px;
+    background-color: #8e1010;
+    padding: 30px;
+    margin-bottom: 90px;
+    margin-top: -1200px;
+  }
+  footer {
+    text-align: center;
+    background-color: #333; /* Set the background color as desired */
+    color: #fff; /* Set the text color as desired */
+    padding: 10px; /* Add padding for better visual appearance */
+}
+
+footer p {
+    margin: 0; /* Remove default margin to ensure text is centered */
+}
+  
