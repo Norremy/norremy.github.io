@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive and Centered Cards</title>
+  <style>
+    .main-container {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .card {
+      width: calc(30% - 20px);
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .card-container {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="card-container">
+      <!-- Cards with Vertical Images -->
+      <div class="card vertical-card" id="card1">
+        <img src="images/design.png" alt="Image 1">
+        <div class="card-content">
+          <h3>Description 1</h3>
+          <p>This is the description for image 1.</p>
+        </div>
+      </div>
+
+      <div class="card vertical-card" id="card2">
+        <img src="image2.jpg" alt="Image 2">
+        <div class="card-content">
+          <h3>Description 2</h3>
+          <p>This is the description for image 2.</p>
+        </div>
+      </div>
+
+      <div class="card vertical-card" id="card3">
+        <img src="image3.jpg" alt="Image 3">
+        <div class="card-content">
+          <h3>Description 3</h3>
+          <p>This is the description for image 3.</p>
+        </div>
+      </div>
+
+      <!-- Cards with Horizontal Images -->
+      <div class="card horizontal-card" id="card4">
+        <img src="horizontal_image1.jpg" alt="Horizontal Image 1">
+        <div class="card-content">
+          <h3>Horizontal Description 1</h3>
+          <p>This is the description for the horizontal image 1.</p>
+        </div>
+      </div>
+
+      <div class="card horizontal-card" id="card5">
+        <img src="images/loginMovies.png" alt="Horizontal Image 2">
+        <div class="card-content">
+          <h3>Horizontal Description 2</h3>
+          <p>This is the description for the horizontal image 2.</p>
+        </div>
+      </div>
+
+      <div class="card horizontal-card" id="card6">
+        <img src="horizontal_image3.jpg" alt="Horizontal Image 3">
+        <div class="card-content">
+          <h3>Horizontal Description 3</h3>
+          <p>This is the description for the horizontal image 3.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

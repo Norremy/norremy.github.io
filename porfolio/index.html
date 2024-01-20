@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remy</title>
     <link rel="stylesheet" href="style.css">
+
+    
     
 </head>
 <body>
@@ -14,9 +16,9 @@
         <div class="text-section"><h1>Hey, I’m Remy.</h1>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">My Works</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#works">My Works</a></li>
+                <li><a href="#contact">Contact Me</a></li>
               </ul>  
               
             <img src="images/homeRocks.svg" />
@@ -28,41 +30,58 @@
         </div>
     </div>
 </section>
+<!-- <nav class = "navbar"><ul>
+    
+  <li><a href='#'> Home</a></li> 
+  <li><a href='#'>Package Tours</a></li> 
+  <li><a href="#">Rediscover</a></li> 
+  <li><a href="#">Singapore</a></li>
+  <li><a href='#'>Cruises</a></li>
+  <li><a href='#'>Contact Us</a></li>
+
+</ul>
+</nav>     -->
 
             
 
 <section>
-<div class="containerAbout">
+<div class="containerAbout" id="aboutMe">
      <h1 class="about">About</h1>
     <img class="image-top" src="images/aboutRock.svg">
     <img class="imageAbout" src="images/passport.jpeg" alt="Description of the image">
-    <h1 class="textAbout">I am a year 2 student currently taking my Digital, Design and Development diploma</h1>
+    <h1 class="textAbout">I am a year 2 student currently taking my Digital, Design and Development diploma. I am a beginner in Web Development, eager to learn and get better.</h1>
+    <h3></h3>
 </div>
 </section>
 
-<section>
+<section id="works">
     <h1 class="about">Works</h1>
     <img class="image-top" src="images/aboutRock.svg">
     <article class="row" >
         <div class="column" href="facebook.com">
             <img class="articleImg" src="images/design.png" >
-          <h2 class="paraH">Explore Exotic Isles</h2>
-          <p class="paraP">Sail to breathtaking islands, enjoy luxury accommodations, and dive into turquoise waters on our tropical adventure cruise.</p>
+          <h2 class="paraH">My poster</h2>
+          <p class="paraP">Poster illustrating some of the skillsets that I have.</p>
         </div>
         <div class="column">
             <img class="articleImg" src="images/advert.jpg" >
-          <h2 class="paraH">Chase Northern Lights</h2>
-          <p class="paraP">Witness the wonder of the Arctic with our expedition cruise, featuring icy landscapes, wildlife encounters, and the mesmerizing Northern Lights.</p>
-        </div>
+          <h2 class="paraH">Electronic Ad</h2>
+          <p class="paraP">An advertisement for an electronic product.</p>
+        
+<a href="works.html">        <button>view more</button> </a>  
+      </div>
         <div class="column">
             <img class="articleImg" src="images/Remy_poster.png" >
-          <h2 class="paraH">Discover Local Cultures</h2>
-          <p class="paraP">Cruise historic rivers, explore ancient temples, and indulge in authentic cuisine on our cultural journey through vibrant communities.<p>
+          <h2 class="paraH">Event poster</h2>
+          <p class="paraP">Event poster for Singaporen exhibition.<p>
         </div>
+        <!-- -->
       </article>
+      
+      
 </section>
 
-<section>
+<section id="contact">
     <div class="containerC">
         <form action="/action_page.php">
           <label for="fname">First Name</label>
